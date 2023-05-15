@@ -10,10 +10,13 @@ We are using Machine Learning to detect whether a particular website is phishing
 API has been created here that give information about the result prediction. The response will be in json format.
 
 "Result": Whether the website url sent is phishing or not.[Possible Values:"Phishing", "Not Phishing"]
+
 "Result_binary": [Possible Values: -1 (phishing), 1(legitimate)]
+
 "url": sends back the url.
 ## Steps
 ../PhishingAlertAPI/mysite :
 
-.. signify current path
+.. signify current path and 
+
 mysite is website which you want to test if its phishing or not
