@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Website Detection</title>
+</head>
+<style>
+    body{
+        margin: 5%;
+        font-size: 1.2em;
+    }
+</style>
+<body>
+    <h1>Phishing Website Detection</h1>
+    <h2>Introduction</h2>
+     <p>
+        Phishing is a type of cyber attack where attackers uses social engineering techniques to trick the 
+        victum into giving their sensitive information, such as login credentials,credit card details, or other personal information.
+    </p>
+
+    <h2>How do we detect it ?</h2>
+    <p>
+        We are using Machine Learning to detect whether a particular website is phishing or not, Logistic 
+        Regression has been used based on the semantic and network based features of the url. Manual Threshold has been 
+        set to optimize the True positive rate.
+    </p>
+    
+    <h2>About the API</h2>
+    <p>
+        API has been created here that give information about the result prediction. The response will be in 
+        json format. 
+        <ol>
+            <li>"Result": Whether the website url sent is phishing or not.[Possible Values:"Phishing", "Not Phishing"]</li>
+            <li>"Result_binary": [Possible Values: -1 (phishing), 1(legitimate)]</li>
+            <li>"url": sends back the url.</li>
+        </ol>
+    </p>
+    <h2>Steps</h2>
+    <p>
+        ../PhishingAlertAPI/mysite :
+        <ul>
+            <li>.. signify current path</li>
+            <li>mysite is website which you want to test if its phishing or not</li>
+        </ul>
+
+    </p>    
+</body>
+</html>
